@@ -1,0 +1,31 @@
+
+<section id="home-section">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-4 card-body"
+        *ngFor="let product of products"
+        
+      >
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
+            <a class="card-title" routerLink="detail/{{product.id}}">{{ product.name }}</a>
+            <p class="card-text">Giá: {{ product.price }}</p>
+            <!-- pipes -->
+            <button (click)="onSelection(product)">
+              click
+            </button>
+          </div>
+        </div>
+        <div *ngIf="product.isDescriptionVisible">
+          
+          <div>
+            <span>{{ product.description }}</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
