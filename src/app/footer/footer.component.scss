@@ -1,0 +1,32 @@
+footer{
+    background-color: rgba(2, 26, 52, 1);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 1408px;
+}
+.footer-info span{
+    color: white;
+    margin-left: 35px;
+}
+form{
+    margin-right: 32px;
+}
+input{
+    padding: 10px;
+    border: 2px solid rgba(255, 168, 0, 1);
+    color: white;
+    background-color: transparent;
+}
+::placeholder{
+    color: white;
+}
+.btn-footer{
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 168, 0, 1);
+    color: white;
+    margin-left: 10px;
+}
