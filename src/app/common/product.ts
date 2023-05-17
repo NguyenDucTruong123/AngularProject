@@ -1,8 +1,10 @@
 export interface Product {
-    id: string;
-    name: string;
-    price: number;
-    description: string;
-    imgUrl: string;
+    // isDescriptionVisible: boolean;
+    id:string,
+    productName:string,
+    productPrice:number,
+    productDesc:string,
+    productimgUrl:string,
+    category:string,
     isDescriptionVisible: boolean
 }
